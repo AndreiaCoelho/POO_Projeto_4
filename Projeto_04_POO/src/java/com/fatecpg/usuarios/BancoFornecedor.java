@@ -13,10 +13,7 @@ import java.util.HashMap;
  */
 public class BancoFornecedor {
 
-    private static HashMap<String, Fornecedor> f;
+    
+    public static final HashMap<String, Fornecedor> f = new HashMap<>();   
 
-    public static HashMap<String, Fornecedor> Usar() {
-        f = new HashMap<>();
-        return f;
-    }
 }

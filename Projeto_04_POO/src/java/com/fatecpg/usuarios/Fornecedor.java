@@ -29,16 +29,16 @@ public class Fornecedor {
     }
     
     
-     public void insert() {
-        BancoFornecedor.Usar().put(getCnpj(), this);
+     public void insert(Fornecedor f) {
+        BancoFornecedor.f.put(getCnpj(), f);
     }
 
-    public static void update(String cnpj, Fornecedor c) {
-        BancoFornecedor.Usar().replace(cnpj, c);
+    public static void update(String cnpj, Fornecedor f) {
+        BancoFornecedor.f.replace(cnpj, f);
     }
 
     public static void delete(String cnpj) {
-        BancoFornecedor.Usar().remove(cnpj);
+        BancoFornecedor.f.remove(cnpj);
     }
     
     //Getters e Setters
