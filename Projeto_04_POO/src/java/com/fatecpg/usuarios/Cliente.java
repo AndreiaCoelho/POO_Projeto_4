@@ -5,8 +5,6 @@
  */
 package com.fatecpg.usuarios;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Andréia
@@ -19,21 +17,30 @@ public class Cliente {
     private String telefone;
     private String endereco;
     
-    private static ArrayList<Cliente> clientes;
-    
-    public static ArrayList<Cliente> getCliente(){
-        return clientes;
+      //construtor
+      public Cliente(String nome, String rg, String cpf, String email, String telefone, String endereco) {
+        this.nome = nome;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.email = email;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
+ 
+    //metodos para o HashMap
+    public void insert(Cliente c) {
+        BancoCliente.c.put(getCpf(), c);
     }
 
-    public void setCliente(String nome, String rg, String cpf, String email, String telefone, String endereco){
-        this.setNome(nome);
-        this.setRg(rg);
-        this.setCpf(cpf);
-        this.setEmail(email);
-        this.setTelefone(telefone);
-        this.setEndereco(endereco);    
-    } 
+    public static void update(String cpf, Cliente c) {
+        BancoCliente.c.replace(cpf, c);
+    }
+
+    public static void delete(String cpf) {
+        BancoCliente.c.remove(cpf);
+    }
     
+    //metodos getters e setters
     public String getNome() {
         return nome;
     }

@@ -48,7 +48,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf"%>
-    <center><h2 > Pagina de Fornecedores </h2></center><br><br>
+    <center><h2 > Cadastro de Fornecedores </h2></center><br><br>
     <button style="margin-left: 5%" type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Inserir">Inserir dados do fornecedor</button>
     <button style="margin-left: 5%" type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete">Deletar dados do fornecedor</button>
     <button style="margin-left: 5%" type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Inserir">Alterar dados do fornecedor</button><br><br>
