@@ -48,7 +48,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf"%>
-    <center><h2 > Pagina de Clientes </h2></center><br><br>
+    <center><h2 > Cadastro de Clientes </h2></center><br><br>
     <button style="margin-left: 5%" type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Inserir">Inserir dados do cliente</button>
     <button style="margin-left: 5%" type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete">Deletar dados do cliente</button>
     <button style="margin-left: 5%" type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Inserir">Alterar dados do cliente</button><br><br>
